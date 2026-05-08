@@ -309,6 +309,8 @@ aside {
     padding: 1rem 0;
   }
 
+/* .footer .kutija p a.fab.fa-instagram je napravljen uz pomoc AI */
+
   .footer .kutija p a.fab.fa-instagram {
     color: var(--primary-color) !important; 
     text-decoration: none !important;
