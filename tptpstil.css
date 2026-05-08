@@ -1,0 +1,327 @@
+:root{
+    --main-color: #437043;    /* Zelena */
+    --primary-color: #6B0D0D; /* Bordo */
+    --hover: #C5A059;         /* Zlatna */
+    --white: #FAF9F6;         /* Prljavo bijela */
+    --light-bg: #F5F5DC;      /* Bež */
+    --black: #2A201C;         /* Tamno smedja */
+    --gold-text: #B8860B;     /* Tamnija zlatna*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    color: var(--black);
+}
+
+header {
+    background-color: #C5A059;
+    padding: 10px 5%;       /* Povećao padding umjesto fiksne visine */
+    min-height: 70px;       /* Minimalna visina, ali može rasti */
+    display: flex;
+    flex-wrap: wrap;        /* KLJUČNO: dozvoljava elementima da pređu u novi red na mobitelu */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary-color); 
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6B0D0D;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #437043; 
+}
+
+.github-link {
+    background: #6B0D0D;
+    color: var(--white) !important;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+.github-link:hover {
+    background: #437043;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid var(--hover);
+    background: var(--white);
+    color: var(--black);
+    transition: 0.3s;
+}
+
+#theme-toggle:hover {
+    background: #808080;
+}
+
+.main-logo-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--light-bg);
+}
+
+/* OVAJ DIO JE AI .sub-header-logo */
+
+.sub-header-logo {
+    width: 100%;
+    height: auto;
+    min-height: 400px; /* Dodaj minimalnu visinu da slika ne postane premala na mobitelu */
+    max-height: 80vh;
+    display: block;
+    object-fit: cover; /* KLJUČNO: Slika će popuniti sav prostor */
+    object-position: center; /* Drži centar slike u fokusu */
+    border-bottom: 3px dashed var(--main-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr 250px; 
+    gap: 30px;
+    padding: 20px 5%;
+    align-items: start;
+}
+
+.side-nav h3 {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.side-nav h3:hover {
+    background-color: var(--main-color);
+}
+
+.side-nav ul {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 220px;
+    list-style: none;
+    padding: 0;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid var(--light-bg);
+}
+
+.side-nav:hover ul {
+    display: block;
+}
+
+.side-nav ul li a {
+    color: var(--black);
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--light-bg);
+    transition: 0.2s;
+}
+
+.side-nav ul li a:hover {
+    background-color: var(--light-bg);
+    color: var(--hover);
+    padding-left: 25px;
+}
+
+#perfume-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+    border: 3px solid;
+    border-color: #6B0D0D;
+}
+
+.card a {
+    text-decoration: none;
+    color: #6B0D0D;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(107, 13, 13, 0.1); 
+    border-color: #B8860B;
+}
+
+.card img {
+    width: 250px; 
+    height: 180px;
+    margin: 15px auto;
+    object-fit: contain; 
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-size: 3px;
+}
+
+.btn-detalji {
+    display: inline-block;
+    background-color: #C5A059;
+    color: var(--white);
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    width: 250px;             
+    text-align: center
+}
+
+.btn-detalji:hover {
+    background-color: #996515;
+}
+
+aside {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--light-bg);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socials a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2rem; 
+    background-color: var(--main-color); 
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials a:hover {
+    background-color: var(--hover); 
+    transform: translateY(-5px);
+}
+
+.socials a.fa-instagram:hover {
+    background-color: #E1306C;
+}
+
+ footer {
+    background: #F5F5DC;
+    color: #B8860B;
+    padding: 45px 5%;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+    font-size: 17px;
+}
+
+.footer 
+  {
+    background: #C5A059;
+    text-align: center;
+  }
+
+  .footer .box 
+  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+  }
+
+  .footer .box .kutija h3
+   {
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    padding: 1rem 0;
+  }
+
+  .footer .box .kutija p 
+  {
+    text-decoration: none;
+    font-size: 1.3rem;
+    line-height: 2;
+    color: var(--black);
+    padding: 1rem 0;
+  }
+
+  .footer .kutija p a.fab.fa-instagram {
+    color: var(--primary-color) !important; 
+    text-decoration: none !important;
+}
+
+.footer .kutija p a.fab.fa-instagram:hover,
+.footer .kutija p a.fab.fa-instagram:visited,
+.footer .kutija p a.fab.fa-instagram:active {
+    color: var(--primary-color) !important; 
+    text-decoration: none !important;
+}
+
+@media (max-width: 992px) {
+    .container { grid-template-columns: 1fr; }
+    header { flex-direction: column; gap: 15px; }
+}
