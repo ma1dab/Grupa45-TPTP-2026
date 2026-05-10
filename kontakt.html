@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scentify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/tptpstil.css">
+</head>
+<body>
+
+    <header id="top">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <h1>Scentify</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="sadrzaj.html">Brendovi</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li><a href="https://github.com/ma1dab/Grupa45-TPTP-2026" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="kontakt-forma-sekcija">
+            <h2>Kontaktirajte nas</h2>
+            <p>Imate pitanje o određenom parfemu ili trebate pomoć pri odabiru? Pišite nam!</p>
+
+            <form action="#" method="post" class="main-form">
+                
+                <div class="form-group">
+                    <label for="ime">Ime:</label>
+                    <input type="text" id="ime" name="ime" placeholder="Vaše ime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="prezime">Prezime:</label>
+                    <input type="text" id="ime" name="ime" placeholder="Vaše prezime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail adresa:</label>
+                    <input type="email" id="email" name="email" placeholder="primjer@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <p>Vrsta upita:</p>
+                    <input type="radio" id="info" name="upit" value="info" checked>
+                    <label for="info">Informacije o proizvodu</label><br>
+                    <input type="radio" id="reklamacija" name="upit" value="reklamacija">
+                    <label for="reklamacija">Reklamacija</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="poruka">Vaša poruka:</label>
+                    <textarea id="poruka" name="poruka" rows="5" placeholder="Kažite nam svoje mišljenje/sugestije"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="da">
+                    <label for="newsletter"> Želim primati obavijesti o novim kolekcijama</label>
+                </div>
+
+                <button type="submit" class="btn-detalji">Pošalji poruku</button>
+            </form>
+        </section>
+
+       <aside class="online-info">
+    <section>
+        <h3>✨ Scentify Online Experience</h3>
+        <ul>
+            <li><strong>Brza dostava:</strong> Šaljemo unutar 24h na vašu adresu širom Bosne i Hercegovine.</li>
+            <li><strong>100% Originali:</strong> Garantujemo autentičnost svakog parfema u našem katalogu.</li>
+            <li><strong>Sigurna kupovina:</strong> Vaši podaci su zaštićeni najsavremenijim enkripcijama.</li>
+        </ul>
+    </section>
+    
+    <hr>
+    
+    <section>
+        <h3>📞 Trebate pomoć?</h3>
+        <p>Naš online tim je dostupan za konsultacije putem forme ili društvenih mreža svakim radnim danom od 09:00 do 18:00h.</p>
+        <p><em>"Pronađite svoj potpisni miris bez napuštanja doma."</em></p>
+    </section>
+</aside>
+
+    </main>
+
+    <footer class="footer">
+        <div class="box">
+            <div class="kutija">
+                <h3>© Scentify 2026. All rights reserved.</h3>
+                <p>Grupa 45: Maid Baraković, Maida Begović, Maid Halilović</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tptpskripte.js"></script>
+</body>
+</html>
