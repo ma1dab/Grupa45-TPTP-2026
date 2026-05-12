@@ -355,7 +355,7 @@ footer {
   text-decoration: none;
   font-size: 1.3rem;
   line-height: 2;
-  color: var(--black);
+  color: #437043;
   padding: 1rem 0;
 }
 
@@ -584,6 +584,7 @@ html {
   padding: 15px;
   border-bottom: 1px solid #eee;
   font-size: 0.95rem;
+  color: #c5a059;
 }
 
 #chanel-detalji tbody tr:hover {
@@ -670,6 +671,7 @@ html {
   padding: 15px;
   border-bottom: 1px solid #eee;
   font-size: 0.95rem;
+  color: #c5a059;
 }
 
 #dior-detalji tbody tr:hover {
@@ -733,6 +735,7 @@ html {
   padding: 15px;
   border-bottom: 1px solid #eee;
   font-size: 0.95rem;
+  color: #c5a059;
 }
 
 #tom-ford-detalji tbody tr:hover {
@@ -796,6 +799,7 @@ html {
   padding: 15px;
   border-bottom: 1px solid #eee;
   font-size: 0.95rem;
+  color: #c5a059;
 }
 
 #creed-detalji tbody tr:hover {
@@ -859,6 +863,7 @@ html {
   padding: 15px;
   border-bottom: 1px solid #eee;
   font-size: 0.95rem;
+  color: #c5a059;
 }
 
 #maison-francis-kurkudijan-detalji tbody tr:hover {
@@ -922,6 +927,7 @@ html {
   padding: 15px;
   border-bottom: 1px solid #eee;
   font-size: 0.95rem;
+  color: #c5a059;
 }
 
 #amouage-detalji tbody tr:hover {
@@ -985,6 +991,7 @@ html {
   padding: 15px;
   border-bottom: 1px solid #eee;
   font-size: 0.95rem;
+  color: #c5a059;
 }
 
 #ysl-detalji tbody tr:hover {
@@ -1048,6 +1055,7 @@ html {
   padding: 15px;
   border-bottom: 1px solid #eee;
   font-size: 0.95rem;
+  color: #c5a059;
 }
 
 #prada-detalji tbody tr:hover {
@@ -1268,7 +1276,7 @@ html {
 .tamni-mod nav ul li a,
 .tamni-mod .footer .box .kutija h3,
 .tamni-mod .footer .box .kutija p {
-  color: #f5efe3;
+  color: c5a059;
 }
 
 .tamni-mod .card,
