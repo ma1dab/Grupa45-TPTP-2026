@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scentify</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/tptpstil.css">
+    <link rel="stylesheet" href="tptpstil.css">
 </head>
 <body>
 
@@ -33,43 +33,60 @@
             <h2>Kontaktirajte nas</h2>
             <p>Imate pitanje o određenom parfemu ili trebate pomoć pri odabiru? Pišite nam!</p>
 
-            <form action="#" method="post" class="main-form">
-                
-                <div class="form-group">
-                    <label for="ime">Ime:</label>
-                    <input type="text" id="ime" name="ime" placeholder="Vaše ime" required>
-                </div>
+           <form id="kontakt-forma" class="main-form" novalidate>
 
-                <div class="form-group">
-                    <label for="prezime">Prezime:</label>
-                    <input type="text" id="ime" name="ime" placeholder="Vaše prezime" required>
-                </div>
+    <div class="form-grupa">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" placeholder="Vaše ime">
+        <small class="tekst-greske"></small>
+    </div>
 
-                <div class="form-group">
-                    <label for="email">E-mail adresa:</label>
-                    <input type="email" id="email" name="email" placeholder="primjer@mail.com" required>
-                </div>
+    <div class="form-grupa">
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime">
+        <small class="tekst-greske"></small>
+    </div>
 
-                <div class="form-group">
-                    <p>Vrsta upita:</p>
-                    <input type="radio" id="info" name="upit" value="info" checked>
-                    <label for="info">Informacije o proizvodu</label><br>
-                    <input type="radio" id="reklamacija" name="upit" value="reklamacija">
-                    <label for="reklamacija">Reklamacija</label>
-                </div>
+    <div class="form-grupa">
+        <label for="email">E-mail adresa:</label>
+        <input type="text" id="email" name="email" placeholder="primjer@mail.com">
+        <small class="tekst-greske"></small>
+    </div>
 
-                <div class="form-group">
-                    <label for="poruka">Vaša poruka:</label>
-                    <textarea id="poruka" name="poruka" rows="5" placeholder="Kažite nam svoje mišljenje/sugestije"></textarea>
-                </div>
+    <div class="form-grupa">
+        <label for="telefon">Telefon:</label>
+        <input type="text" id="telefon" name="telefon" placeholder="061 123 456">
+        <small class="tekst-greske"></small>
+    </div>
 
-                <div class="form-group">
-                    <input type="checkbox" id="newsletter" name="newsletter" value="da">
-                    <label for="newsletter"> Želim primati obavijesti o novim kolekcijama</label>
-                </div>
+    <div class="form-grupa">
+        <label for="temaUpita">Tema upita:</label>
+        <select id="temaUpita" name="temaUpita">
+            <option value="">-- Odaberite temu --</option>
+            <option value="informacije">Informacije o parfemu</option>
+            <option value="narudzba">Narudžba</option>
+            <option value="reklamacija">Reklamacija</option>
+            <option value="saradnja">Saradnja</option>
+        </select>
+        <small class="tekst-greske"></small>
+    </div>
 
-                <button type="submit" class="btn-detalji">Pošalji poruku</button>
-            </form>
+    <div class="form-grupa">
+        <label for="poruka">Vaša poruka:</label>
+        <textarea id="poruka" name="poruka" rows="5" placeholder="Kažite nam svoje mišljenje/sugestije"></textarea>
+        <small class="tekst-greske"></small>
+    </div>
+
+    <div class="form-grupa">
+        <input type="checkbox" id="newsletter" name="newsletter" value="da">
+        <label for="newsletter">Želim primati obavijesti o novim kolekcijama</label>
+    </div>
+
+    <button type="submit" class="btn-detalji">Pošalji poruku</button>
+    <button type="reset" class="btn-detalji">Resetuj formu</button>
+
+    <p id="poruka-uspjeha" class="uspjesna-poruka"></p>
+</form>
         </section>
 
        <aside class="online-info">
@@ -101,6 +118,6 @@
    <p>Za dodatne informacije možete nam se obratiti preko društvenih mreža.</p>
     </div>
 
-    <script src="js/tptpskripte.js"></script>
+    <script src="tptpskripte.js"></script>
 </body>
 </html>
